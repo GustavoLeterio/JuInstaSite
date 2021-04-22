@@ -5,7 +5,6 @@ const Grid = styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 color:#2E1700;
 display: grid;
-max-height: 100vh;
 grid-template-columns: 0.77fr 3.23fr;
 margin:15px;
 @media screen and (max-width: 1280px){
@@ -44,25 +43,18 @@ margin-bottom:20px;
 }
 `
 const BlockWrapper = styled.div`
-padding:0;
-height:185vh;
+padding:0 0 5vh 0;
 margin:0 1.5vw 3vh 1.5vw;
 border: 5px solid white;
 border-radius: 2px;
-@media screen and (max-width: 1280px){
-  height:190vh;
-}
 @media screen and (max-width: 1024px){
   margin:0 0 3vh 2vw;
-  height:140vh;
 }
 @media screen and (max-width: 768px){
   margin:0 0 3vh 2vw;
-  height:150vh;
 }
 @media screen and (max-width: 640px){
   border: 2px solid white;
-  height:165vh;
 }
 `
 const P = styled.p`
@@ -92,7 +84,7 @@ font-size:60px;
   height:15vh;
 }
 @media screen and (max-width: 640px){
-  font-size:50px;
+  font-size:35px;
   margin:3vh 0 5vh 0;
 }
 `
