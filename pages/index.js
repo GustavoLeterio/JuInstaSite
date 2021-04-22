@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Link from 'next/link'
 import db from "../db.json";
 
 const Grid = styled.div`
@@ -6,21 +7,13 @@ const Grid = styled.div`
   place-items:center;
   text-align:center;
   width:100vw;
-  animation: slidein .5s ease-in;
-  @keyframes slidein {
-    from{
-      opacity:0;
-    }
-    to{
-      opacity:1;
-    }
-  }
 `
 const LogoImage = styled.img`
   height:50vh;
   margin:20px 0 20px 0;
 `
 const A = styled.a`
+  cursor: pointer;
   font-family:arial;
   text-decoration:none;
   font-size:30px;
@@ -30,6 +23,11 @@ const A = styled.a`
   border-radius:15px;
   background-color:white;
   margin:0 0 30px 0; 
+  transition: 0.25s;
+  &:hover{
+    font-size:35px;
+    padding:25px;
+  }
   @media screen and (max-width: 1024px){
     width:60vw;
     font-size:40px;
@@ -51,13 +49,13 @@ const A = styled.a`
 export default function Home() {
   return (
     <Grid>
-      <LogoImage src="https://i.pinimg.com/originals/ec/81/fa/ec81fa8c40917e11e9653baa02986f36.png"/>
+      <LogoImage src="https://i.pinimg.com/originals/ec/81/fa/ec81fa8c40917e11e9653baa02986f36.png" />
       <A href="https://api.whatsapp.com/send?phone=5543998315030">
         Contato
       </A>
-      <A href="google.com">
-        Cardápio
-      </A>
+      <Link href="/cardapio">
+        <A>Cardápio</A>
+      </Link>
     </Grid>
   )
 }
