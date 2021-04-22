@@ -303,7 +303,7 @@ export default function Home() {
             </Block>
           </BlockWrapper>
           <WppButton>
-            <Link href="https://api.whatsapp.com/send?phone=5543998315030">
+            <Link href="https://api.whatsapp.com/send?phone=5543998315030" target="_blank">
               <img src="https://i.pinimg.com/originals/5d/e2/12/5de212c0138283d00be5e8e9d789c39e.png" />WHATSAPP
             </Link>
           </WppButton>
