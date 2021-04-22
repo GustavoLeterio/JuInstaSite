@@ -100,22 +100,7 @@ const Wpp = styled.img`
   margin:10px;
 }
 `
-const A = styled.a`
-  position:absolute;
-  transform:translateX(70vw);
-  @media screen and (max-width: 1280px){
-  transform:translateX(58vw);
-}
-@media screen and (max-width: 1024px){
-  transform:translateX(42vw);
-}
-@media screen and (max-width: 768px){
-  transform:translateX(46vw);
-}
-@media screen and (max-width: 640px){
-  transform:translateX(77vw);
-}
-`
+
 const Block = styled.div`
 
 `
@@ -188,6 +173,91 @@ z-index:-100;
   height:20vh;
 }
 `
+const Link = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration:none;
+  color:black;
+  font-weight:700;
+  font-family:"Comfortaa",cursive;
+`
+const WppButton = styled.div`
+  width:20vw;
+  padding:10px;
+  border-radius:20px;
+  background-color:white;
+  position:absolute;
+  transform:translateX(45vw);
+  img{
+    margin-right:20px;
+    width:3vw;
+  }
+  @media screen and (max-width: 1280px){
+  transform:translateX(45vw);
+}
+@media screen and (max-width: 1024px){
+  transform:translate(17.5vw,6vh);
+  img{
+    margin-right:20px;
+    width:5vw;
+  }
+}
+@media screen and (max-width: 768px){
+  transform:translate(-32.5vw,-5vh);
+  width:25vw;
+  img{
+    margin-right:20px;
+    width:7vw;
+  }
+}
+@media screen and (max-width: 640px){
+  transform:translate(25vw,6vh);
+  width:40vw;
+}
+@media screen and (max-width: 360px){
+  transform:translate(25vw,8vh);
+  width:40vw;
+}
+`
+const Gambiarra = styled.div`
+  width:20vw;
+  padding:10px;
+  border-radius:20px;
+  background-color:transparent;
+  position:absolute;
+  transform:translateX(45vw);
+  img{
+    margin-right:20px;
+    width:3vw;
+  }
+  @media screen and (max-width: 1280px){
+  transform:translateX(45vw);
+}
+@media screen and (max-width: 1024px){
+  transform:translate(17.5vw,6vh);
+  img{
+    margin-right:20px;
+    width:5vw;
+  }
+}
+@media screen and (max-width: 768px){
+  transform:translate(-32.5vw,-5vh);
+  width:25vw;
+  img{
+    margin-right:20px;
+    width:7vw;
+  }
+}
+@media screen and (max-width: 640px){
+  transform:translate(25vw,6vh);
+  width:40vw;
+}
+@media screen and (max-width: 360px){
+  transform:translate(25vw,8vh);
+  width:40vw;
+}
+`
 export default function Home() {
   return (
     <Div>
@@ -201,7 +271,6 @@ export default function Home() {
         </ImageWrapper>
         <Main>
           <BlockWrapper>
-          <A href="https://api.whatsapp.com/send?phone=5543998315030"><Wpp src="https://i.pinimg.com/originals/a0/19/35/a01935a158978537601f371992f9d4aa.png" /></A>
             <H1>Chocolates</H1>
             <P>LIVRES DE: AÇÚCAR, LEITE E DERIVADOS, GLÚTEN, SOJA - CONSERVANTES, CORANTES, AROMATIZANTES ARTIFICIAIS.</P>
             <Block>
@@ -245,8 +314,15 @@ export default function Home() {
               <Li>PAÇOCA</Li>
             </Block>
           </BlockWrapper>
+          <WppButton>
+            <Link href="https://api.whatsapp.com/send?phone=5543998315030">
+              <img src="https://i.pinimg.com/originals/5d/e2/12/5de212c0138283d00be5e8e9d789c39e.png" />WHATSAPP
+            </Link>
+          </WppButton>
           <Warning>* CONSULTAR DISPONIBILIDADE PRONTA ENTREGA</Warning>
           <Warning>* FAZEMOS PERSONALIZAÇÃO PARA COMEMORAÇÕES</Warning>
+          <Gambiarra>
+          </Gambiarra>
         </Main>
       </Grid>
     </Div>
