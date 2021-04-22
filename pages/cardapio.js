@@ -151,6 +151,7 @@ letter-spacing:2px;
   text-align:center;
   margin:0;
 }
+
 `
 const Div = styled.div`
 position:absolute;
@@ -197,6 +198,14 @@ const WppButton = styled.div`
     width:5vw;
   }
 }
+@media screen and (max-width: 800px){
+  transform:translate(-34vw,-30vh);
+  width:30vw;
+  img{
+    margin-right:20px;
+    width:7vw;
+  }
+}
 @media screen and (max-width: 768px){
   transform:translate(-32.5vw,-5vh);
   width:25vw;
@@ -212,6 +221,18 @@ const WppButton = styled.div`
 @media screen and (max-width: 360px){
   transform:translate(25vw,8vh);
   width:40vw;
+}
+@media screen and (max-width: 280px){
+  transform:translate(15vw,13vh);
+  width:60vw;
+}
+@media screen and (max-height: 568px){
+  transform:translate(15vw,12vh);
+  width:60vw;
+}
+@media screen and (max-height: 320px){
+  transform:translate(15vw,25vh);
+  width:60vw;
 }
 `
 const Gambiarra = styled.div`
