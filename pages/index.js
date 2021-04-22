@@ -52,7 +52,7 @@ export default function Home() {
   return (
     <Grid>
       <LogoImage src="https://i.pinimg.com/originals/ec/81/fa/ec81fa8c40917e11e9653baa02986f36.png"/>
-      <A href="https://web.whatsapp.com/send?phone=5543998315030">
+      <A href="https://api.whatsapp.com/send?phone=5543998315030">
         Contato
       </A>
       <A href="google.com">
