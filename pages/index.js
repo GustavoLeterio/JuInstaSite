@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 import db from "../db.json";
-
+const Wrapper = styled.div`
+width:100vw;
+  height:100vh;
+  background-color:#c98f4f;
+`
 const Grid = styled.div`
   display:grid;
   place-items:center;
@@ -48,14 +52,16 @@ const A = styled.a`
 
 export default function Home() {
   return (
-    <Grid>
-      <LogoImage src="https://i.pinimg.com/originals/ec/81/fa/ec81fa8c40917e11e9653baa02986f36.png" />
-      <A href="https://api.whatsapp.com/send?phone=5543998315030">
-        Contato
+    <Wrapper>
+      <Grid>
+        <LogoImage src="https://i.pinimg.com/originals/ec/81/fa/ec81fa8c40917e11e9653baa02986f36.png" />
+        <A href="https://api.whatsapp.com/send?phone=5543998315030">
+          Contato
       </A>
-      <Link href="/cardapio">
-        <A>Cardápio</A>
-      </Link>
-    </Grid>
+        <Link href="/cardapio">
+          <A>Cardápio</A>
+        </Link>
+      </Grid>
+    </Wrapper >
   )
 }
