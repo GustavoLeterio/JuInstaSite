@@ -58,14 +58,16 @@ border-radius: 2px;
 }
 `
 const P = styled.p`
-text-align:center;
+text-align:justify;
+margin:0 5vw 0 5vw;
+padding:5vh 0 5vh 0;
 line-height:25px;
 font-size:20px;
-padding-top:20px;
+@media screen and (max-width: 1024px){
+  padding:0;
+}
 @media screen and (max-width: 768px){
   font-size:16px;
-  margin:0;
-  padding:0;
 }
 @media screen and (max-width: 640px){
   font-size:15px;
@@ -177,14 +179,13 @@ const WppButton = styled.div`
   background-color:white;
   position:absolute;
   transform:translateX(45vw);
-  transition: 0.25s;
+  transition: 0.3s;
   img{
     margin-right:20px;
     width:3vw;
-    transition: 0.25s;
   }
   &:hover{
-    box-shadow: 0 0 20px 2px #1fb30bAA;
+    box-shadow: 0 0 10px 2px #727272;
   }
   @media screen and (max-width: 1280px){
   transform:translateX(45vw);
