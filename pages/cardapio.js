@@ -177,9 +177,14 @@ const WppButton = styled.div`
   background-color:white;
   position:absolute;
   transform:translateX(45vw);
+  transition: 0.25s;
   img{
     margin-right:20px;
     width:3vw;
+    transition: 0.25s;
+  }
+  &:hover{
+    box-shadow: 0 0 20px 2px #1fb30bAA;
   }
   @media screen and (max-width: 1280px){
   transform:translateX(45vw);
