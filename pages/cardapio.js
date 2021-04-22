@@ -88,18 +88,6 @@ font-size:60px;
   margin:3vh 0 5vh 0;
 }
 `
-const Wpp = styled.img`
- width:75px;
- cursor:pointer;
- margin:20px;
- @media screen and (max-width: 768px){
-  width:60px;
-}
-@media screen and (max-width: 640px){
-  width:40px;
-  margin:10px;
-}
-`
 
 const Block = styled.div`
 
