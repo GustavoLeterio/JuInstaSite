@@ -18,7 +18,8 @@ const LogoImage = styled.img`
 `
 const A = styled.a`
   cursor: pointer;
-  font-family:arial;
+  font-family: 'Comfortaa', cursive;
+  font-weight:700;
   text-decoration:none;
   font-size:30px;
   color:black;

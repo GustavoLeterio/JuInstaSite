@@ -91,10 +91,37 @@ font-size:60px;
   margin:40px;
   height:15vh;
 }
-
 @media screen and (max-width: 640px){
   font-size:50px;
   margin:3vh 0 5vh 0;
+}
+`
+const Wpp = styled.img`
+ width:75px;
+ cursor:pointer;
+ margin:20px;
+ @media screen and (max-width: 768px){
+  width:60px;
+}
+@media screen and (max-width: 640px){
+  width:40px;
+  margin:10px;
+}
+`
+const A = styled.a`
+  position:absolute;
+  transform:translateX(70vw);
+  @media screen and (max-width: 1280px){
+  transform:translateX(58vw);
+}
+@media screen and (max-width: 1024px){
+  transform:translateX(42vw);
+}
+@media screen and (max-width: 768px){
+  transform:translateX(46vw);
+}
+@media screen and (max-width: 640px){
+  transform:translateX(77vw);
 }
 `
 const Block = styled.div`
@@ -182,6 +209,7 @@ export default function Home() {
         </ImageWrapper>
         <Main>
           <BlockWrapper>
+          <A href="https://api.whatsapp.com/send?phone=5543998315030"><Wpp src="https://i.pinimg.com/originals/a0/19/35/a01935a158978537601f371992f9d4aa.png" /></A>
             <H1>Chocolates</H1>
             <P>LIVRES DE: AÇÚCAR, LEITE E DERIVADOS, GLÚTEN, SOJA - CONSERVANTES, CORANTES, AROMATIZANTES ARTIFICIAIS.</P>
             <Block>
